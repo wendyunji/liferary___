@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>라이프러리 신입 부원 2차 모집</title>
+<meta name="description" content="책 속의 작은 삶, 꾸준한 이야기. 2024년부터 스물두 권을 함께 읽은 독서 모임 라이프러리가 신입 부원을 모집해요.">
+<meta name="theme-color" content="#8FDE7A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="라이프러리 신입 부원 2차 모집">
+<meta property="og:description" content="책 속의 작은 삶, 꾸준한 이야기. 라이프러리와 읽고 나눠요.">
+<meta property="og:image" content="/assets/og.png">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;600;800&family=Nanum+Myeongjo:wght@400&display=swap">
+<style>
+:root{--ink:#111;--muted:#666;--forest:#0E3B22;--mint:#C9F5B8;--paper:#F4F4F1;--lime:#8FDE7A;--pad:clamp(20px,4vw,56px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Gothic A1',sans-serif;color:var(--ink);background:#fff;word-break:keep-all;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.grain{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.green{position:relative;overflow:hidden;color:var(--forest)}
+.burst{width:100%;height:100%;transform-origin:50% 50%;will-change:transform}
+.h2{margin:0;font-size:clamp(30px,4.4vw,60px);font-weight:200;line-height:1.15;letter-spacing:-.045em}
+.sec{padding:clamp(64px,9vw,120px) 0;display:flex;flex-direction:column;gap:24px}
+.sec-head{padding:0 var(--pad);display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.tag{font-size:12px;color:var(--muted);white-space:nowrap}
+.btn-dark{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;background:var(--forest);color:var(--mint);text-decoration:none;font-size:14px;font-weight:600}
+.track{display:flex;width:max-content;will-change:transform}
+.tick-item{display:inline-flex;align-items:center;gap:18px;padding-right:18px;white-space:nowrap;font-size:15px;font-weight:300}
+.card{margin:0;width:clamp(190px,21vw,260px);display:flex;flex-direction:column;gap:8px;flex:0 0 auto}
+.card-art{position:relative;overflow:hidden;aspect-ratio:1/1;padding:16px;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;gap:3px}
+.card-label{position:absolute;left:16px;top:14px;font-size:9px;letter-spacing:.3em}
+.card-quote{position:relative;margin:0;line-height:1.32;letter-spacing:-.02em;white-space:pre-line}
+.boxed{position:relative;background:#111;color:#fff;font-size:19px;padding:0 6px}
+.card figcaption{font-size:12px;line-height:1.45}
+.card figcaption small{display:block;color:var(--muted);font-size:12px}
+.tiles{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border-top:1px solid var(--ink);border-left:1px solid var(--ink)}
+.tile{padding:18px;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);display:flex;flex-direction:column;justify-content:space-between;gap:20px;min-height:140px}
+.tile dt{font-size:12px;color:var(--muted)}
+.tile dd{margin:0;display:flex;flex-direction:column;gap:4px}
+.tile .big{font-size:clamp(26px,3.4vw,44px);font-weight:200;letter-spacing:-.04em;line-height:1.05}
+.tile .small{font-size:13px}
+.tile.lime{background:var(--lime)}
+.tile.lime dt,.tile.lime dd{color:var(--forest)}
+.steps{list-style:none;margin:0;padding:0 var(--pad);display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0 clamp(14px,2vw,28px)}
+.steps li{padding:16px 0 20px;border-top:1px solid var(--ink);display:flex;flex-direction:column;gap:8px}
+.steps .no{font-size:12px;color:#1F7A35}
+.steps strong{font-size:18px;font-weight:400;letter-spacing:-.02em}
+.steps span.d{font-size:13px;line-height:1.6;color:#555}
+.snap{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 var(--pad) 6px;scroll-padding:0 var(--pad);-webkit-overflow-scrolling:touch}
+.voice{margin:0;flex:0 0 clamp(270px,78vw,420px);scroll-snap-align:start;padding:24px;min-height:240px;border-top:1px solid var(--ink);display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.voice blockquote{margin:0;font-size:clamp(20px,2.2vw,26px);font-weight:200;line-height:1.5;letter-spacing:-.03em}
+.voice figcaption{font-size:12px;color:#555}
+.rule{flex:0 0 clamp(220px,62vw,280px);scroll-snap-align:start;aspect-ratio:4/3;padding:18px;background:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.rule .no{font-size:12px;color:#1F7A35}
+.rule strong{font-size:21px;font-weight:400;letter-spacing:-.03em}
+.rule span.s{font-size:13px;line-height:1.5;color:#555}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:0 24px;background:var(--forest);color:var(--mint);text-decoration:none;font-size:18px;font-weight:600}
+.cta:hover{background:#082a17}
+.linkbtn{align-self:flex-start;min-height:44px;padding:0;background:transparent;border:0;border-bottom:1px solid var(--forest);color:var(--forest);font:inherit;font-size:14px;cursor:pointer}
+a:focus-visible,button:focus-visible{outline:2px solid var(--forest);outline-offset:3px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<svg aria-hidden="true" width="0" height="0" style="position:absolute">
+<filter id="lfGrain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+<linearGradient id="lfRayFade" gradientUnits="userSpaceOnUse" x1="20" y1="20" x2="130" y2="130"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="0.55" stop-color="#FFFFFF" stop-opacity="1"/></linearGradient>
+<symbol id="rays" viewBox="0 0 200 200"><path d="M8 100L192 100M30.7 140L176.2 56M52.5 182.3L146 20.3M100 100L100 6M110 117L55 22M134.6 120L20.3 54"/></symbol>
+</svg>
+
+<!-- HERO -->
+<section id="top" class="green" style="background:radial-gradient(ellipse at 18% 8%,#C3F0B2 0%,#8FDE7A 38%,#6FCC5B 100%)">
+<div aria-hidden="true" style="position:absolute;right:clamp(-220px,-22vw,-110px);top:clamp(90px,9vw,120px);width:clamp(380px,72vw,900px);aspect-ratio:1/1;pointer-events:none">
+<svg id="burst1" class="burst" viewBox="0 0 200 200" fill="none" stroke="url(#lfRayFade)" stroke-width="8"><use href="#rays"/></svg>
+</div>
+<svg aria-hidden="true" class="grain" style="opacity:.22;mix-blend-mode:multiply"><rect width="100%" height="100%" filter="url(#lfGrain)"/></svg>
+<div style="position:relative;padding:0 var(--pad)">
+<header style="padding:16px 0;display:flex;align-items:center;justify-content:space-between;gap:16px">
+<a href="#top" aria-label="라이프러리 처음으로" style="display:block;line-height:0"><img src="/assets/logo-dark.png" alt="Liferary" style="height:40px;width:auto"></a>
+<a href="#apply" class="btn-dark">지원하기</a>
+</header>
+<div style="padding:clamp(96px,16vw,200px) 0 clamp(36px,5vw,64px);display:flex;flex-direction:column;gap:clamp(16px,2.4vw,28px)">
+<p style="margin:0;font-size:13px;letter-spacing:.08em">Liferary Book Club — since 2024</p>
+<h1 style="margin:0;font-size:clamp(68px,14vw,216px);font-weight:200;line-height:.98;letter-spacing:-.065em">신입 부원<br>2차 모집</h1>
+<p style="margin:0;font-size:clamp(19px,2.4vw,32px);font-weight:300"><span style="font-weight:800">라이프러리</span>와 읽고 나눠요</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6">모집 중 · 12월 손님 초대 · 첫 모임 2027년 1월</p>
+</div>
+</div>
+<div style="position:relative;overflow:hidden;border-top:1px solid var(--forest);padding:14px 0" aria-label="함께 읽은 책 속 문장">
+<div id="ticker" class="track"></div>
+</div>
+</section>
+
+<!-- SHELF -->
+<section id="shelf" class="sec">
+<div class="sec-head">
+<div style="display:flex;flex-direction:column;gap:10px"><h2 class="h2">2024년 1월부터,<br>스물두 권</h2><p style="margin:0;font-size:14px;color:#555">매달 한 권, 책마다 한 문장을 남겼어요.</p></div>
+<span class="tag">(01) 책장</span>
+</div>
+<div style="overflow:hidden"><div id="row1" class="track" style="gap:10px"></div></div>
+<div style="overflow:hidden"><div id="row2" class="track" style="gap:10px"></div></div>
+</section>
+
+<!-- AT A GLANCE -->
+<section style="padding:0 var(--pad) clamp(64px,9vw,120px);display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;justify-content:space-between;align-items:flex-end;gap:12px"><h2 class="h2">한 달에 한 권,<br>끝까지</h2><span class="tag">(02) 모임</span></div>
+<dl class="tiles">
+<div class="tile"><dt>매달</dt><dd><span class="big">넷째 주 토</span><span class="small">오후 1시부터 3~4시간</span></dd></div>
+<div class="tile lime"><dt>대화</dt><dd><span class="big">50 + 10</span><span class="small">50분 대화, 10분 휴식</span></dd></div>
+<div class="tile"><dt>장소</dt><dd><span class="big">수도권</span><span class="small">청년센터, 도산서재, 수정여관…</span></dd></div>
+<div class="tile"><dt>가입비</dt><dd><span class="big">3만 원</span><span class="small">3회 연속 참여 시 환급</span></dd></div>
+</dl>
+</section>
+
+<!-- A DAY -->
+<section style="background:var(--paper);padding:clamp(64px,9vw,120px) 0 0;display:flex;flex-direction:column;gap:28px">
+<div class="sec-head"><h2 class="h2">토요일 오후 1시,<br>라이프러리의 하루</h2><span class="tag">(03) 하루</span></div>
+<ol class="steps">
+<li><span class="no">01</span><strong>한줄평</strong><span class="d">책을 한 문장으로. 고른 사람은 왜 이 책인지부터.</span></li>
+<li><span class="no">02</span><strong>좋았던 것, 아쉬웠던 것</strong><span class="d">각자 미리 적어온 감상을 펼쳐놓고 이유를 묻습니다.</span></li>
+<li><span class="no">03</span><strong>마음에 남은 구절</strong><span class="d">같은 책인데 밑줄 친 곳은 다 달라요.</span></li>
+<li><span class="no">04</span><strong>질문의 바다</strong><span class="d">모두가 던져둔 질문에 하나씩 답해요.</span></li>
+<li><span class="no">05</span><strong>그날의 활동</strong><span class="d">슬픔에 대한 글쓰기, 내가 만들 회사의 조직도, 공자에게 보내는 고민 상담.</span></li>
+<li><span class="no">06</span><strong>룰렛</strong><span class="d">다음 달 책과 진행자가 정해지는 순간.</span></li>
+</ol>
+<p style="margin:0;padding:0 var(--pad);font-size:13px;line-height:1.7;color:#555">책 말고도 — 1주년 파티 · 봄 소풍 · 서울국제도서전 · 각자 다른 책을 읽고 모인 달 · 온라인 모임</p>
+<div style="background:var(--forest);color:var(--mint);overflow:hidden;padding:22px 0;display:flex;flex-direction:column;gap:12px">
+<span style="padding:0 var(--pad);font-size:12px;letter-spacing:.08em;color:var(--lime)">질문의 바다 — 멤버들이 실제로 던진 질문들</span>
+<div id="qsTrack" class="track"></div>
+</div>
+</section>
+
+<!-- VOICES -->
+<section class="sec">
+<div class="sec-head"><h2 class="h2">멤버들이<br>말하는 라이프러리</h2><span class="tag">(04) 목소리 →</span></div>
+<div class="snap" role="list">
+<figure class="voice" role="listitem" style="background:#fff"><blockquote>같은 또래들이 모여 같은 책을 읽고, 서로 너무나도 다른 관점을 나누는 것이 좋았다.</blockquote><figcaption>라이프러리 멤버</figcaption></figure>
+<figure class="voice" role="listitem" style="background:#EAF8E3"><blockquote>고여 있지 않고 함께 나아간다는 생동감. 만날 때마다 서로가 조금씩 변하고 자란 모습을 나누는 것 자체가 에너지가 되었어요.</blockquote><figcaption>라이프러리 멤버</figcaption></figure>
+<figure class="voice" role="listitem" style="background:#fff"><blockquote>결국 책을 완성시키는 건 읽는 사람의 몫이라는 걸, 다른 사람들의 이야기를 들으며 다시 깨달았다.</blockquote><figcaption>라이프러리 멤버</figcaption></figure>
+</div>
+</section>
+
+<!-- PROMISES -->
+<section id="rules" class="sec" style="background:var(--paper)">
+<div class="sec-head"><h2 class="h2">오래 읽기 위한<br>일곱 가지 약속</h2><span class="tag">(05) 약속 →</span></div>
+<div class="snap" role="list">
+<div class="rule" role="listitem"><span class="no">01</span><span style="display:flex;flex-direction:column;gap:6px"><strong>끝까지 읽어요</strong><span class="s">완독은 의무. 못 읽은 날 2번이면 결석 1회</span></span></div>
+<div class="rule" role="listitem"><span class="no">02</span><span style="display:flex;flex-direction:column;gap:6px"><strong>결석은 1년에 4번까지</strong><span class="s">넘기면 구성원에서 제외. 불가피한 경우 휴식기 선택 가능</span></span></div>
+<div class="rule" role="listitem"><span class="no">03</span><span style="display:flex;flex-direction:column;gap:6px"><strong>10분 지나면 지각</strong><span class="s">지각 3번은 결석 1회. 당일 무단결석은 다음 간식 담당</span></span></div>
+<div class="rule" role="listitem"><span class="no">04</span><span style="display:flex;flex-direction:column;gap:6px"><strong>기록을 남겨요</strong><span class="s">모임 다음 주 토요일까지 컨플루언스에</span></span></div>
+<div class="rule" role="listitem"><span class="no">05</span><span style="display:flex;flex-direction:column;gap:6px"><strong>골라 읽지 않아요</strong><span class="s">장르를 가려 참석하지 않기</span></span></div>
+<div class="rule" role="listitem"><span class="no">06</span><span style="display:flex;flex-direction:column;gap:6px"><strong>비용은 깔끔하게</strong><span class="s">정기 회비 없음. 책·대관비는 각자, 48시간 내 정산</span></span></div>
+<div class="rule" role="listitem"><span class="no">07</span><span style="display:flex;flex-direction:column;gap:6px"><strong>"-님", 존댓말로</strong><span class="s">모두 동등하게, 서로의 생각을 존중해요</span></span></div>
+</div>
+</section>
+
+<!-- GUEST DECEMBER -->
+<section id="guest" style="position:relative;overflow:hidden;background:var(--forest);color:var(--mint)">
+<svg aria-hidden="true" class="grain" style="opacity:.35;mix-blend-mode:overlay"><rect width="100%" height="100%" filter="url(#lfGrain)"/></svg>
+<div style="position:relative;padding:clamp(56px,8vw,100px) var(--pad);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:28px">
+<div style="flex:1 1 420px;display:flex;flex-direction:column;gap:16px">
+<span style="font-size:12px;letter-spacing:.08em;color:var(--lime)">(06) 손님 초대</span>
+<h2 style="margin:0;font-size:clamp(36px,5.4vw,76px);font-weight:200;line-height:1.1;letter-spacing:-.05em;color:#fff">12월엔,<br>손님으로 먼저</h2>
+<p style="margin:0;font-size:15px;line-height:1.7">한 해를 돌아보는 독서 회고 모임에 손님을 초대해요. 지원 전에 분위기부터 느껴보세요.</p>
+</div>
+<a href="https://www.instagram.com/liferary___/" target="_blank" rel="noopener" style="flex:0 0 auto;display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:0 22px;border:1px solid var(--lime);color:var(--mint);text-decoration:none;font-size:16px">인스타그램 DM으로 신청 ↗</a>
+</div>
+</section>
+
+<!-- APPLY -->
+<section id="apply" class="green" style="background:radial-gradient(ellipse at 82% 10%,#C3F0B2 0%,#8FDE7A 40%,#6FCC5B 100%)">
+<div aria-hidden="true" style="position:absolute;left:clamp(-200px,-20vw,-90px);bottom:clamp(-200px,-18vw,-100px);width:clamp(320px,54vw,680px);aspect-ratio:1/1;pointer-events:none">
+<svg id="burst2" class="burst" viewBox="0 0 200 200" fill="none" stroke="url(#lfRayFade)" stroke-width="8"><use href="#rays"/></svg>
+</div>
+<svg aria-hidden="true" class="grain" style="opacity:.22;mix-blend-mode:multiply"><rect width="100%" height="100%" filter="url(#lfGrain)"/></svg>
+<div style="position:relative;padding:clamp(72px,10vw,140px) var(--pad) clamp(140px,16vw,220px);display:flex;flex-direction:column;gap:28px;max-width:720px;margin-left:auto">
+<span style="font-size:12px">(07) 지원</span>
+<h2 style="margin:0;font-size:clamp(44px,6.4vw,96px);font-weight:200;line-height:1.05;letter-spacing:-.06em">스물세 번째 책은<br>당신이 고를<br>차례예요</h2>
+<p style="margin:0;font-size:15px;line-height:1.7">성인이라면 누구나. 수도권에서, 넷째 주 토요일 오후를 비워둘 수 있다면. 첫 모임은 2027년 1월이에요.</p>
+<a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdzdru46BTZKC5WY0HgJ_zJ9UiA-5vLV6eUWNt1ANJ0yLFApQ/viewform" target="_blank" rel="noopener">지원서 쓰러 가기
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+<button type="button" id="qsBtn" class="linkbtn" aria-expanded="false" aria-controls="qsList">지원서에서 묻는 것들 +</button>
+<ol id="qsList" hidden style="margin:0;padding:0 0 0 20px;display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:1.6">
+<li>라이프러리를 알게 된 경로</li>
+<li>가입하려는 목적</li>
+<li>함께 해보고 싶은 독서 활동 (최대 두 권, 예: 〈슬픔을 공부하는 슬픔〉으로 슬픔을 정의해보기)</li>
+<li>즐겨 읽는 장르나 작가</li>
+<li>수도권 · 토요일 참여 가능 여부, 규칙 동의</li>
+</ol>
+</div>
+</section>
+
+<footer style="padding:24px var(--pad);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 24px;font-size:13px;color:var(--muted)">
+<span>© Liferary — Freedom, diversity, and liferary!</span>
+<a href="https://www.instagram.com/liferary___/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:none">문의 · Instagram @liferary___ ↗</a>
+</footer>
+
+<script>
+(function () {
+  var sans = "'Gothic A1', sans-serif", serif = "'Nanum Myeongjo', serif";
+  var S = {
+    A: { bg: 'linear-gradient(180deg,#BBA61C 0%,#567E50 38%,#1F48A0 74%)', fg: '#F6DA1C', lc: '#fff', fw: 800, fs: '18px' },
+    B: { bg: 'radial-gradient(ellipse at 40% 35%,#F0ECE6 0%,#DCD6CE 70%)', fg: '#111', lc: '#555', fw: 400, fs: '19px' },
+    C: { bg: 'radial-gradient(ellipse at 30% 70%,#A9C99E 0%,#6F9A68 55%,#5B8657 100%)', fg: '#fff', lc: '#fff', fw: 300, fs: '19px' },
+    D: { bg: 'radial-gradient(ellipse at 50% 55%,#C9C9C7 0%,#F2F2F0 60%)', fg: '#3A3A3A', lc: '#555', fw: 200, fs: '19px' },
+    E: { bg: 'radial-gradient(ellipse at 30% 25%,#3E7868 0%,#2B5C4E 50%,#1F463B 100%)', fg: '#fff', lc: '#DCEAE3', fw: 300, fs: '19px' },
+    F: { bg: 'linear-gradient(170deg,#DDF6E6 0%,#B8E6CF 55%,#86C7C4 100%)', fg: '#1F4F48', lc: '#1F4F48', fw: 300, fs: '19px' },
+    G: { bg: 'linear-gradient(180deg,#B9CCF0 0%,#7FB0E2 45%,#6CA4DA 100%)', fg: '#0F2440', lc: '#0F2440', fw: 800, fs: '19px' },
+    H: { bg: 'radial-gradient(ellipse at 20% 15%,#C3F0B2 0%,#8FDE7A 45%,#6FCC5B 100%)', fg: '#0E3B22', lc: '#0E3B22', fw: 200, fs: '20px' },
+    I: { bg: '#111', fg: '#9BE58A', lc: '#9BE58A', fw: 300, fs: '19px' }
+  };
+  // [번호, 연도, 스타일, 문장(배열이면 검정 박스), 제목, 저자, 글꼴, 크기]
+  var books = [
+    ['01', '2024', 'I', '괴물은 어디에도 없고\n어디에나 있다', '한 낮의 그림자: 몬스터', '손원평 외'],
+    ['02', '2024', 'G', '영원히…\n살고 싶으세요?', '연옥의 수리공', '경민선'],
+    ['03', '2024', 'B', ['사랑,', '원래 어려운 게', '맞았구나?'], '사랑의 기술', '에리히 프롬'],
+    ['04', '2024', 'D', '그것은 누구 인생이고\n이것은 누구 인생인가', '데일 카네기 인생경영론', '데일 카네기'],
+    ['05', '2024', 'H', '질투는\n어리석나요?', '수빈이가 되고 싶어', '청예'],
+    ['06', '2024', 'A', '나는 오늘\n윤리적이었을 수도\n아닐 수도 있다', '무엇이 옳은가', '후안 엔리케스'],
+    ['07', '2024', 'C', '슬픔을 공부하는 슬픔은\n곧 희망이라는 역설', '슬픔을 공부하는 슬픔', '신형철'],
+    ['08', '2024', 'F', '나에게 소비란\n무엇인가요?', 'EBS 다큐프라임 자본주의', 'EBS 제작팀'],
+    ['09', '2024', 'I', '천천히 다시 읽고 싶은데\n다시 읽고 싶지는 않은', '작별하지 않는다', '한강'],
+    ['10', '2025', 'E', 'Bureaucracy', '관료제', '막스 베버', serif, '28px'],
+    ['11', '2025', 'D', '우리는 왜\nchill guy가\n되고 싶을까', '관조하는 삶', '한병철'],
+    ['12', '2025', 'C', '내 곰인형은\n어디에서 오나요', '트로피컬 나이트', '조예은'],
+    ['13', '2025', 'B', ['네, 후회해요.', '왜요?'], '후회의 재발견', '다니엘 핑크'],
+    ['14', '2025', 'A', '나는\n내가 무슨 일을 하는지\n모릅니다', '노동자 없는 노동', '필 존스'],
+    ['15', '2025', 'F', '좋은 에세이란\n무엇인가요?', '보통의 존재', '이석원'],
+    ['16', '2025', 'G', '감상은,\n외로움이었습니다', '노르웨이의 숲', '무라카미 하루키'],
+    ['17', '2025', 'H', '인생은 어쩌면\n보물찾기 게임', '연금술사', '파울로 코엘료'],
+    ['18', '2025', 'I', '그래서, 철학은\n왜 필요한가요?', '철학의 쓸모', '로랑스 드빌레르'],
+    ['19', '2026', 'D', '군자되기\n넘 빡시다', '당신이 만나야 할 단 하나의 논어', '판덩'],
+    ['20', '2026', 'E', '내가 하나의 세계를 만든\n신이라면?', '무신론자를 위한 종교', '알랭 드 보통'],
+    ['21', '2026', 'B', ['돈…', '어렵다.'], '돈의 속성', '김승호'],
+    ['22', '2026', 'C', '젊은 문장들을\n자유롭게', '2026 젊은작가상 수상작품집', '']
+  ];
+  var tickerQuotes = ['괴물은 어디에도 없고 어디에나 있다', '영원히… 살고 싶으세요?', '네, 후회해요. 왜요?', '내 곰인형은 어디에서 오나요', '우리는 왜 chill guy가 되고 싶을까', '인생은 어쩌면 보물찾기 게임'];
+  var seaQuestions = ['괴물인 나에게서 벗어날 수 있을까요?', '질투는 어리석나요?', '어렸을 때 한 행동이 꼬리처럼 따라올까 봐 두려워진 적 있나요?', "당신은 '적어도'인가요, '했더라면'인가요?", '무위의 나라가 있다면 가실 건가요?', '당신의 후회에 테마곡을 골라주세요', '자신의 보물을 찾고 있나요?', '공자에게 단 하나만 물을 수 있다면?', '여러분은 언제 노동하고 있다고 느끼나요?', '자신을 사랑하는 본인만의 방법이 있나요?'];
+
+  var SVGNS = 'http://www.w3.org/2000/svg';
+  function el(tag, attrs, text) {
+    var n = document.createElement(tag);
+    if (attrs) for (var k in attrs) { if (k === 'style') n.style.cssText = attrs[k]; else n.setAttribute(k, attrs[k]); }
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function svg(attrs, child) {
+    var s = document.createElementNS(SVGNS, 'svg');
+    for (var k in attrs) s.setAttribute(k, attrs[k]);
+    if (child) s.appendChild(child);
+    return s;
+  }
+  function rays(size, color) {
+    var u = document.createElementNS(SVGNS, 'use'); u.setAttribute('href', '#rays');
+    return svg({ width: size, height: size, viewBox: '0 0 200 200', fill: 'none', stroke: color, 'stroke-width': '14', 'aria-hidden': 'true' }, u);
+  }
+  function grain() {
+    var r = document.createElementNS(SVGNS, 'rect'); r.setAttribute('width', '100%'); r.setAttribute('height', '100%'); r.setAttribute('filter', 'url(#lfGrain)');
+    var s = svg({ 'class': 'grain', 'aria-hidden': 'true' }, r); s.style.cssText = 'opacity:.35;mix-blend-mode:overlay'; return s;
+  }
+  function card(b, dup) {
+    var st = S[b[2]];
+    var fig = el('figure', { 'class': 'card' });
+    if (dup) fig.setAttribute('aria-hidden', 'true');
+    var art = el('div', { 'class': 'card-art', style: 'background:' + st.bg });
+    art.appendChild(grain());
+    art.appendChild(el('span', { 'class': 'card-label', style: 'color:' + st.lc }, 'No.' + b[0] + ' · ' + b[1]));
+    if (Array.isArray(b[3])) b[3].forEach(function (l) { art.appendChild(el('span', { 'class': 'boxed' }, l)); });
+    else art.appendChild(el('p', { 'class': 'card-quote', style: 'font-family:' + (b[6] || sans) + ';font-size:' + (b[7] || st.fs) + ';font-weight:' + st.fw + ';color:' + st.fg }, b[3]));
+    fig.appendChild(art);
+    var cap = el('figcaption', null, b[4]);
+    if (b[5]) cap.appendChild(el('small', null, b[5]));
+    fig.appendChild(cap);
+    return fig;
+  }
+  function fill(track, items, make) {
+    for (var r = 0; r < 2; r++) items.forEach(function (it) { track.appendChild(make(it, r > 0)); });
+  }
+
+  var ticker = document.getElementById('ticker');
+  for (var i = 0; i < 4; i++) tickerQuotes.forEach(function (q) {
+    var item = el('span', { 'class': 'tick-item' }, q);
+    if (i > 0) item.setAttribute('aria-hidden', 'true');
+    item.appendChild(rays(14, '#0E3B22'));
+    ticker.appendChild(item);
+  });
+  var row1 = document.getElementById('row1'), row2 = document.getElementById('row2');
+  fill(row1, books.slice(0, 11), card);
+  fill(row2, books.slice(11), card);
+  var qsTrack = document.getElementById('qsTrack');
+  fill(qsTrack, seaQuestions, function (q, dup) {
+    var s = el('span', { style: 'padding-right:40px;white-space:nowrap;font-size:clamp(22px,3vw,36px);font-weight:200;letter-spacing:-.03em' }, q);
+    if (dup) s.setAttribute('aria-hidden', 'true');
+    return s;
+  });
+
+  var btn = document.getElementById('qsBtn'), list = document.getElementById('qsList');
+  btn.addEventListener('click', function () {
+    var open = list.hidden;
+    list.hidden = !open;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.textContent = open ? '지원서 질문 접기 −' : '지원서에서 묻는 것들 +';
+  });
+
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var b1 = document.getElementById('burst1'), b2 = document.getElementById('burst2'), t0 = 0;
+  function slide(node, speed, rightward, s) {
+    var w = node.scrollWidth / 2; if (w <= 0) return;
+    var d = (s * speed) % w;
+    node.style.transform = 'translateX(' + (rightward ? d - w : -d) + 'px)';
+  }
+  function loop(t) {
+    if (!t0) t0 = t;
+    var s = (t - t0) / 1000, pulse = 1 + 0.035 * Math.sin(s * 1.1);
+    b1.style.transform = 'rotate(' + (s * 5) + 'deg) scale(' + pulse + ')';
+    b2.style.transform = 'rotate(' + (-s * 4) + 'deg) scale(' + (2 - pulse) + ')';
+    slide(ticker, 36, false, s);
+    slide(row1, 26, false, s);
+    slide(row2, 22, true, s);
+    slide(qsTrack, 42, false, s);
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
